@@ -1,0 +1,48 @@
+body{
+        background-color : pink;
+    }
+    
+h2 {
+        color: white;
+        text-align: center;
+    }
+    
+h1 {
+    font-size: 10;
+}
+    
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  padding: 8px;
+  color: white;
+  font-weight: bold; 
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #99badd ;
+  
+}
+
+section {
+ display: flex;
+}
+
+aside {
+ flex: 1
+}
+
+article {
+ flex: 4
+}
