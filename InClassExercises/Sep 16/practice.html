@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <!--Put Javascript code in here-->
+        <!-- script: lets compiler know this is executible code -->
+        <script>
+        // We have registered a callback function
+            var done = 1; //declaring a variable
+            
+            function ChangeColor() {
+                document.body.style.backgroundColor = "red";
+            }
+            
+            function ToggleColor() {
+                done = !done;
+                document.body.style.color = done ? "red" : "green";
+                ChangeText();
+            }
+            
+            function ChangeText() {
+                document.getElementById("demo").textContent = "ME!";
+            }
+        </script>
+    </head>
+    <body onclick="ToggleColor()">
+        <h1 id="demo">Hello World</h1>
+    </body>
+</html>
+
+<!-- best practice is to separate javascript from your normal code -->
